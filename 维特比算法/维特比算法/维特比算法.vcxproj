@@ -115,6 +115,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="basic.c" />
+    <ClCompile Include="viterbi.c" />
     <ClCompile Include="源.c" />
   </ItemGroup>
   <ItemGroup>

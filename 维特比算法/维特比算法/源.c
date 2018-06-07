@@ -1,11 +1,6 @@
 #include "viterbi.h"
 
-void CreatData() {
-	CreatH();
-	CreatW();
-	CreatX();
-	CreatY();
-}
+
 
 void DisplayAnswer() {
 	printf("\n\nAnswer:\n");
@@ -34,8 +29,8 @@ int main() {
 	
 	end = time(NULL);
 	cend = clock();
-	printf("\nRuntime: %dms\n", cend - cstart);
-	printf("accuracy = %.2f%%\n", accuracy);
+	printf("\n暴力方法运行时间: %dms\n", cend - cstart);
+	printf("暴力方法准确性 = %.2f%%\n", accuracy);
 
 	start = time(NULL);
 	cstart = clock();
@@ -55,8 +50,8 @@ int main() {
 
 	end = time(NULL);
 	cend = clock();
-	printf("\nRuntime: %dms\n", cend - cstart);
-	printf("accuracy = %.2f%%\n", accuracy);
+	printf("\n维特比方法运行时间: %dms\n", cend - cstart);
+	printf("维特比方法准确性 = %.2f%%\n", accuracy);
 
 
 	system("pause");
